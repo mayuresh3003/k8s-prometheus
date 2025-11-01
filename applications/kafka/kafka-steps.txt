@@ -1,0 +1,6 @@
+1. Apply kafka-namespace.yaml first
+2. Apply strimiz operator using following command kubectl apply -f https://strimzi.io/install/latest?namespace=kafka -n kafka
+3. Apply kafka-controller-nodepool.yaml
+4. Apply kafka-broker-nodepool.yaml
+5. Apply kafka.yaml
+6. Apply kafka-metrics.yaml
