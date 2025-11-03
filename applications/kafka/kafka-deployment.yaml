@@ -27,8 +27,13 @@ spec:
         port: 9094
         type: nodeport
         tls: false
+    metricsConfig:
+      type: jmxPrometheusExporter
+      valueFrom:
+        configMapKeyRef:
+          name: kafka-metrics
+          key: kafka-metrics-config.yml
   clusterCa:
     generateCertificateAuthority: true
   clientsCa:
     generateCertificateAuthority: true
-
